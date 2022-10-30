@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    container_name: NestDemo
+    ports:
+     - 8999:8999
+    volumes:
+     - /volume1/docker/nest:/app
+
+    

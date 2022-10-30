@@ -1,0 +1,72 @@
+### List all messages
+GET http://192.168.1.242:7888/messages
+
+### Create a new message
+POST http://192.168.1.242:7888/messages
+content-type: application/json
+
+{
+     "content": "1234"
+}
+
+### Get a particular message
+GET http://192.168.1.242:7888/messages/139
+
+### Signup
+POST http://192.168.1.242:7888/auth/signup
+content-type: application/json
+
+{
+     "email": "peter@gmail.com",
+     "password": "111111",
+     "sdfds": "sfds"
+}
+
+### Create report
+POST http://192.168.1.242:7888/reports/create
+content-type: application/json
+
+{
+     "price": "1.2"
+}
+
+### Find one user
+GET http://192.168.1.242:7888/auth/4
+
+### Find all users
+GET http://192.168.1.242:7888/auth
+
+### Delete User
+DELETE http://192.168.1.242:7888/auth/3
+
+### Update user
+PATCH http://192.168.1.242:7888/auth/4
+content-type: application/json
+
+{
+     "email": "peter2@gmail.com"
+}
+
+### Signup
+POST http://192.168.1.242:7888/auth/signup
+content-type: application/json
+
+{
+     "email": "asdf10@asdf.com",
+     "password": "asdffkasdf"
+}
+
+### Signin
+POST http://192.168.1.242:7888/auth/signin
+content-type: application/json
+
+{
+     "email": "asdf10@asdf.com",
+     "password": "asdffkasdf"
+}
+
+### add color
+GET http://192.168.1.242:7888/auth/colors/blue
+
+### get colors
+GET http://192.168.1.242:7888/auth/colors
